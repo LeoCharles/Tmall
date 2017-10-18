@@ -1,0 +1,9 @@
+*~
+
+.DS_Stroe
+
+.idea
+
+node_modules
+
+dist
