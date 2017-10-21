@@ -2,7 +2,7 @@
  * @Author: leofe 
  * @Date: 2017-10-20 22:08:54 
  * @Last Modified by: leofe
- * @Last Modified time: 2017-10-21 00:38:01
+ * @Last Modified time: 2017-10-21 23:18:50
  */
 
 var webpack           = require('webpack');
@@ -10,7 +10,7 @@ var ExtractTextPlugin = require("extract-text-webpack-plugin");
 var HtmlWebpackPlugin = require('html-webpack-plugin');
 
 // 环境变量的配置 dev / online
-var WEBPACK_ENV       = process.env.WEBPACK_ENV || 'dev';
+var WEBPACK_ENV = process.env.WEBPACK_ENV || 'dev';
 
 // 获取html-webpack-plugin参数的方法
 var getHtmlConfig = function(name) {
@@ -44,6 +44,14 @@ var config = {
           { test: /\.(jpg|png|gif|svg|eot|ttf|woff)\??.*$/, loader: 'url-loader?limit=100&name=resource/[name].[ext]'},
         ]
     },
+    resolve: {
+        alias: {
+            util    : __dirname + '/src/util',
+            page    : __dirname + '/src/page',
+            service : __dirname + '/src/service',
+            image   : __dirname + '/src/image',
+        }
+    },
     plugins: [
         // 独立通用模块打包到js/base.js
         new webpack.optimize.CommonsChunkPlugin({
@@ -59,6 +67,7 @@ var config = {
         
 };
 
+// 判断是否为线上环境
 if ('dev' === WEBPACK_ENV) {
     config.entry.common.push('webpack-dev-server/client?http://localhost:8088/');
 }
