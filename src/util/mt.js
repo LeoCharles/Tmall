@@ -2,12 +2,14 @@
  * @Author: leofe 
  * @Date: 2017-10-21 22:48:11 
  * @Last Modified by: leofe
- * @Last Modified time: 2017-10-21 23:38:51
+ * @Last Modified time: 2017-10-23 23:03:41
  */
 
+var conf = {
+    serverHost: '',
+};
 
 var _mt = {
-
     // 网络请求
     request : function (param) {
         var _this = this;
@@ -16,7 +18,7 @@ var _mt = {
             url      : param.url    || '',
             dataType : param.type   || 'json',
             data     : param.data   || '',
-            success  : function (res) {
+            success : function (res) {
                 // 请求成功
                 if (0 === res.status) {
                     typeof param.success === 'function' && param.success(res.data, res.msg);
@@ -31,12 +33,25 @@ var _mt = {
                 }
 
             },
-            error    : function (res) {
+            error : function (res) {
                 typeof param.error === 'function' && param.error(res.statusText);
             }
         });
     },
-
+    // 获取服务器地址
+    getServerUrl : function (path) {
+        return conf.serverHost + path;
+    },
+    // 获取url参数
+    getUrlParam : function (name) {
+        var reg = new RegExp('(^|&)' + name + '=([^&]*)(&|$)');
+        var result = window.location.search.substr(1).match(reg);
+        return result ? decodeURIComponent(result[2]) : null;
+    },
+    // 渲染html
+    renderHtml : function (htmlTemplate, data) {
+        
+    },
     // 登录处理
     doLogin : function () {
         window.location.href = './login.html?redirect=' + encodeURIComponent(window.locationn.href);
