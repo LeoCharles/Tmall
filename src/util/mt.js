@@ -2,12 +2,16 @@
  * @Author: leofe 
  * @Date: 2017-10-21 22:48:11 
  * @Last Modified by: leofe
- * @Last Modified time: 2017-10-23 23:03:41
+ * @Last Modified time: 2017-10-23 23:32:26
  */
+
+
 
 var conf = {
     serverHost: '',
 };
+ // html模板引擎
+var Hogan = require('hogan.js');
 
 var _mt = {
     // 网络请求
@@ -50,7 +54,9 @@ var _mt = {
     },
     // 渲染html
     renderHtml : function (htmlTemplate, data) {
-        
+        var template = Hogan.compile(htmlTemplate),
+            result   = template.render(data);
+        return result;
     },
     // 登录处理
     doLogin : function () {

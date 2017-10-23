@@ -30,5 +30,7 @@
     "webpack": "^1.15.0",
     "webpack-dev-server": "^1.16.5"
   },
-  "dependencies": {}
+  "dependencies": {
+    "hogan": "^1.0.2"
+  }
 }
