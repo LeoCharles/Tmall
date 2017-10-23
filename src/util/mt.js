@@ -2,7 +2,7 @@
  * @Author: leofe 
  * @Date: 2017-10-21 22:48:11 
  * @Last Modified by: leofe
- * @Last Modified time: 2017-10-23 23:32:26
+ * @Last Modified time: 2017-10-24 00:01:44
  */
 
 
@@ -58,11 +58,38 @@ var _mt = {
             result   = template.render(data);
         return result;
     },
+    // 成功的提示
+    successTips : function (msg) {
+        alert(msg || '操作成功！')
+    },
+    // 错误的提示
+    errorTips : function (msg) {
+        alert(msg || '哪里不对了~');
+    },
+    // 表单字段验证， 验证是否为非空、手机号、邮箱
+    validate : function (value, type) {
+        var value = $.trim(value);
+        // 非空验证
+        if ('require' === type) {
+            return !!value;
+        }
+        // 手机号验证
+        if ('phone' === type) {
+            return /^1\d{10}$/.test(value);
+        }
+        // 邮箱验证
+        if ('email' === type) {
+            return /^[A-Za-z\d]+([-_.][A-Za-z\d]+)*@([A-Za-z\d]+[-.])+[A-Za-z\d]{2,4}$/.test(value);
+        }
+    },
     // 登录处理
     doLogin : function () {
         window.location.href = './login.html?redirect=' + encodeURIComponent(window.locationn.href);
     },
-
+    // 返回首页
+    goHome : function () {
+        window.location.href = './index.html';
+    }
 };
 
 module.exports = _mt;
