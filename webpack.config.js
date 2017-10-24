@@ -2,7 +2,7 @@
  * @Author: leofe 
  * @Date: 2017-10-20 22:08:54 
  * @Last Modified by: leofe
- * @Last Modified time: 2017-10-21 23:18:50
+ * @Last Modified time: 2017-10-24 22:43:34
  */
 
 var webpack           = require('webpack');
@@ -46,10 +46,11 @@ var config = {
     },
     resolve: {
         alias: {
-            util    : __dirname + '/src/util',
-            page    : __dirname + '/src/page',
-            service : __dirname + '/src/service',
-            image   : __dirname + '/src/image',
+            node_modules : __dirname + '/node_modules',
+            util         : __dirname + '/src/util',
+            page         : __dirname + '/src/page',
+            service      : __dirname + '/src/service',
+            image        : __dirname + '/src/image',
         }
     },
     plugins: [
