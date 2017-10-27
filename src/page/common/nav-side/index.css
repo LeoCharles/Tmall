@@ -1,0 +1,28 @@
+/*
+ * @Author: leofe 
+ * @Date: 2017-10-27 00:00:23 
+ * @Last Modified by: leofe
+ * @Last Modified time: 2017-10-27 00:39:12
+ */
+
+/* 左侧导航 */
+.nav-side {
+    float: left;
+    width: 130px;
+    min-height: 150px;
+}
+.nav-side .nav-item {
+    line-height: 25px;
+    font-size: 13px;
+}
+.nav-side .nav-item .link {
+    color: #666;
+}
+.nav-side .nav-item.active .link {
+    color: #c60023;
+}
+/* 右侧内容区 */
+.content.width-nav {
+     float: left;
+     width: 950px;
+}

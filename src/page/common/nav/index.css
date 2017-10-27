@@ -1,0 +1,35 @@
+/*
+ * @Author: leofe 
+ * @Date: 2017-10-26 21:48:33 
+ * @Last Modified by: leofe
+ * @Last Modified time: 2017-10-26 21:58:30
+ */
+.nav {
+    height: 30px;
+    line-height: 30px;
+    background-color: #eee;
+}
+.nav .user-info {
+    float: left;
+}
+.nav .user.login {
+    display: none;
+}
+.nav .user .link {
+    margin-right: 5px;
+}
+.nav .nav-list {
+    float: right;
+}
+.nav .nav-list .nav-item {
+    display: inline-block;
+    margin-left: 5px;
+}
+
+
+
+
+
+
+
+

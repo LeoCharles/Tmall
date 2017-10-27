@@ -2,13 +2,17 @@
  * @Author: leofe 
  * @Date: 2017-10-20 21:51:39 
  * @Last Modified by: leofe
- * @Last Modified time: 2017-10-24 22:16:45
+ * @Last Modified time: 2017-10-27 00:38:01
  */
 
+require('page/common/nav/index.js');
+require('page/common/header/index.js');
+var navSide = require('page/common/nav-side/index.js');
+var _tm = require('util/tm.js');
 
-var _mt = require('util/mt.js');
-
-
+navSide.init({
+    name: 'user-center'
+});
 
 
 

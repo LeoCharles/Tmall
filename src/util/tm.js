@@ -2,7 +2,7 @@
  * @Author: leofe 
  * @Date: 2017-10-21 22:48:11 
  * @Last Modified by: leofe
- * @Last Modified time: 2017-10-24 22:15:39
+ * @Last Modified time: 2017-10-26 22:15:46
  */
 
 var conf = {
@@ -11,7 +11,7 @@ var conf = {
  // html模板引擎
 var Hogan = require('hogan.js');
 
-var _mt = {
+var _tm = {
     // 网络请求
     request : function (param) {
         var _this = this;
@@ -82,15 +82,15 @@ var _mt = {
     },
     // 登录处理
     doLogin : function () {
-        window.location.href = './login.html?redirect=' + encodeURIComponent(window.locationn.href);
+        window.location.href = './login.html?redirect=' + encodeURIComponent(window.location.href);
     },
     // 返回首页
     goHome : function () {
         window.location.href = './index.html';
-    }
+    },
 };
 
-module.exports = _mt;
+module.exports = _tm;
 
 
 

@@ -1,0 +1,22 @@
+/*
+ * @Author: leofe 
+ * @Date: 2017-10-26 23:00:07 
+ * @Last Modified by: leofe
+ * @Last Modified time: 2017-10-26 23:04:36
+ */
+
+ .footer {
+     padding-bottom: 20px;
+ }
+ .footer .links {
+     line-height: 30px;
+     text-align: center;
+     color: #666;
+ }
+ .footer .links .link {
+     padding: 0 10px;
+ }
+ .footer .copyright {
+     line-height: 30px;
+     text-align: center;
+ }

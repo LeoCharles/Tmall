@@ -2,7 +2,7 @@
  * @Author: leofe 
  * @Date: 2017-10-20 22:08:54 
  * @Last Modified by: leofe
- * @Last Modified time: 2017-10-24 22:43:34
+ * @Last Modified time: 2017-10-27 00:34:11
  */
 
 var webpack           = require('webpack');
@@ -25,25 +25,31 @@ var getHtmlConfig = function(name) {
 
 // webpack config
 var config = {
+    // 入口文件
     entry: {
         'common' : ['./src/page/common/index.js'],
         'index'  : ['./src/page/index/index.js'],
         'login'  : ['./src/page/login/index.js'],
     },
+    // 目标文件的内容
     output: {
         path       : './dist',
         publicPath : '/dist',
         filename   : 'js/[name].js'
     },
+    // 外部依赖的声明
     externals: {
         'jquery': 'window.jQuery'
     },
+    // 各种loader
     module: {
         loaders: [
           { test: /\.css$/, loader: ExtractTextPlugin.extract("style-loader","css-loader") },
           { test: /\.(jpg|png|gif|svg|eot|ttf|woff)\??.*$/, loader: 'url-loader?limit=100&name=resource/[name].[ext]'},
+          { test: /\.string$/, loader: 'html-loader'}
         ]
     },
+    // 配置的别名
     resolve: {
         alias: {
             node_modules : __dirname + '/node_modules',
@@ -53,6 +59,7 @@ var config = {
             image        : __dirname + '/src/image',
         }
     },
+    // 插件
     plugins: [
         // 独立通用模块打包到js/base.js
         new webpack.optimize.CommonsChunkPlugin({
@@ -70,6 +77,7 @@ var config = {
 
 // 判断是否为线上环境
 if ('dev' === WEBPACK_ENV) {
+    // 配置webpack-dev-server开发环境
     config.entry.common.push('webpack-dev-server/client?http://localhost:8088/');
 }
 
