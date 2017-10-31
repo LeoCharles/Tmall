@@ -2,7 +2,7 @@
  * @Author: leofe 
  * @Date: 2017-10-21 22:48:11 
  * @Last Modified by: leofe
- * @Last Modified time: 2017-10-26 22:15:46
+ * @Last Modified time: 2017-10-28 21:53:13
  */
 
 var conf = {
@@ -50,7 +50,7 @@ var _tm = {
         var result = window.location.search.substr(1).match(reg);
         return result ? decodeURIComponent(result[2]) : null;
     },
-    // 渲染html
+    // 渲染html(基于Hogan)
     renderHtml : function (htmlTemplate, data) {
         var template = Hogan.compile(htmlTemplate),
             result   = template.render(data);
@@ -82,7 +82,7 @@ var _tm = {
     },
     // 登录处理
     doLogin : function () {
-        window.location.href = './login.html?redirect=' + encodeURIComponent(window.location.href);
+        window.location.href = './user-login.html?redirect=' + encodeURIComponent(window.location.href);
     },
     // 返回首页
     goHome : function () {

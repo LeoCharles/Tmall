@@ -2,7 +2,7 @@
  * @Author: leofe 
  * @Date: 2017-10-26 21:48:39 
  * @Last Modified by: leofe
- * @Last Modified time: 2017-10-26 23:27:36
+ * @Last Modified time: 2017-10-28 22:26:33
  */
 require('./index.css');
 var _tm   = require('util/tm.js');
@@ -25,7 +25,7 @@ var nav = {
         });
         // 注册
         $('.js-register').on('click', function () {
-           window.location.href = './register.html';
+           window.location.href = './user-register.html';
         });
         // 退出
         $('.js-logout').on('click', function () {
@@ -39,7 +39,7 @@ var nav = {
     // 读取用户信息
     loadUserInfo : function () {
         _user.checkLogin(function(res) {
-            $('.user.not-login').hide().sublings('.user.login').show()
+            $('.user.not-login').hide().siblings('.user.login').show()
                 .find('.username').text(res.username);
         }, function (errMsg) {
            // do nothing

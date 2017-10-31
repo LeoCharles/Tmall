@@ -2,7 +2,7 @@
  * @Author: leofe 
  * @Date: 2017-10-27 21:53:20 
  * @Last Modified by: leofe
- * @Last Modified time: 2017-10-27 22:53:07
+ * @Last Modified time: 2017-10-28 13:12:24
  */
 
 
@@ -16,7 +16,7 @@
     display: none;
 }
 .result-con .result-title {
-    color: #c60023;
+    color: #e72955;
 }
 .result-con .result-content {
     margin: 30px;
@@ -24,6 +24,6 @@
 .result-con .result-content .link {
     margin: 0 5px;
     padding: 5px 10px;
-    border: 1px solid #c60023;
-    color: #c60023;
+    border: 1px solid #e72955;
+    color: #e72955;
 }
