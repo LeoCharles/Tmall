@@ -1,11 +1,12 @@
 /*
  * @Author: leofe 
  * @Date: 2017-10-20 22:08:54 
- * @Last Modified by: leofe
- * @Last Modified time: 2017-10-31 21:56:08
+ * @Last Modified by: Leo
+ * @Last Modified time: 2017-11-07 22:31:05
  */
 
 var webpack           = require('webpack');
+// 单独打包样式文件
 var ExtractTextPlugin = require("extract-text-webpack-plugin");
 var HtmlWebpackPlugin = require('html-webpack-plugin');
 
@@ -35,7 +36,7 @@ var config = {
         'user-pass-reset'    : ['./src/page/user-pass-reset/index.js'],
         'user-center'        : ['./src/page/user-center/index.js'],
         'user-center-update' : ['./src/page/user-center-update/index.js'],
-        'user-pass-update' : ['./src/page/user-pass-update/index.js'],
+        'user-pass-update'   : ['./src/page/user-pass-update/index.js'],
         'result'             : ['./src/page/result/index.js'],
     },
     // 目标文件的内容
@@ -51,6 +52,7 @@ var config = {
     // 各种loader
     module: {
         loaders: [
+            // css单独打包
           { test: /\.css$/, loader: ExtractTextPlugin.extract("style-loader","css-loader") },
           { test: /\.(jpg|png|gif|svg|eot|ttf|woff)\??.*$/, loader: 'url-loader?limit=100&name=resource/[name].[ext]'},
           { test: /\.string$/, loader: 'html-loader'}
