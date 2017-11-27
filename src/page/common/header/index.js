@@ -1,8 +1,8 @@
 /*
  * @Author: leofe 
  * @Date: 2017-10-26 23:11:55 
- * @Last Modified by: leofe
- * @Last Modified time: 2017-10-26 23:41:20
+ * @Last Modified by: Leo
+ * @Last Modified time: 2017-11-27 22:54:22
  */
 
 require('./index.css');
@@ -12,12 +12,16 @@ var _tm   = require('util/tm.js');
 var header = {
     // 初始化
     init : function () {
+        this.onLoad();
         this.bindEvent();
     },
     // keyword存在时回填
     onLoad : function () {
         var keyword = _tm.getUrlParam('keyword');
-        $('#search-input').val(keyword);
+        // keyword存在，则回填输入框
+        if(keyword) {
+            $("#search-input").val(keyword);
+        }
     },
     // 绑定事件
     bindEvent : function () {
@@ -38,7 +42,7 @@ var header = {
     searchSubmit : function () {
         var keyword = $.trim($('#search-input').val());
         if(keyword) {
-            window.location.href = './list?keyword=' + keyword;
+            window.location.href = './list.html?keyword=' + keyword;
         } else {
             _tm.goHome();
         }
