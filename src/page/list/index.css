@@ -2,7 +2,7 @@
  * @Author: Leo 
  * @Date: 2017-11-27 20:12:31 
  * @Last Modified by: Leo
- * @Last Modified time: 2017-11-27 22:57:31
+ * @Last Modified time: 2017-11-28 17:52:59
  */
 
 /* 排序按钮 */
@@ -84,4 +84,15 @@
 }
 .p-list-con .p-item .p-name-con .p-name:hover {
     color: #e7380d;
+}
+/* 错误信息 */
+.err-tip {
+    height: 80px;
+    line-height: 80px;
+    margin-bottom: 20px;
+    color: #f60;
+    text-align: center;
+    background-color: #eee;
+    font-size: 16px;
+    font-weight: bold;
 }

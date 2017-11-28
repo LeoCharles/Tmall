@@ -1,0 +1,43 @@
+/*
+ * @Author: Leo 
+ * @Date: 2017-11-28 10:41:34 
+ * @Last Modified by: Leo
+ * @Last Modified time: 2017-11-28 14:24:13
+ */
+
+/* 分页样式 */
+.page-con {
+    text-align: center;
+    color: #333;
+    /* 文字不被选中 */
+    -moz-user-select: none;
+    -ms-user-select: none;
+    -webkit-user-select: none;
+    user-select: none;
+}
+.page-con .page-item {
+    display: inline-block;
+    height: 36px;
+    line-height: 36px;
+    padding: 0 15px;
+    margin: 0 2px;
+    border: 1px solid #ccc;
+    background-color: #eee;
+    cursor: pointer;
+}
+.page-con .page-item:hover {
+    background-color: #fff;
+}
+.page-con .page-item.disabled {
+    color: #ccc;
+    background-color: #eee;
+    cursor: auto;
+}
+.page-con .page-item.active {
+    background-color: #fff;
+    cursor: auto;
+}
+.page-con .page-total {
+    margin-left: 10px;
+    cursor: auto;
+}
