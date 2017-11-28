@@ -2,7 +2,7 @@
  * @Author: Leo 
  * @Date: 2017-11-27 20:16:27 
  * @Last Modified by: Leo
- * @Last Modified time: 2017-11-28 18:06:23
+ * @Last Modified time: 2017-11-28 23:30:44
  */
 
 var _tm = require("util/tm.js");
@@ -17,12 +17,11 @@ var _product = {
             error   : reject
         });
     },
-
     // 获取商品详细信息
     getProductDetial: function (productId, resolve, reject) {
       _tm.request({
 			url: _tm.getServerUrl("/product/detail.do"),
-		  	data: {productId: productId},
+		  data: {productId: productId},
 			success: resolve,
 			error: reject
       });
