@@ -1,8 +1,8 @@
 /*
  * @Author: leofe 
  * @Date: 2017-10-20 21:46:27 
- * @Last Modified by: leofe
- * @Last Modified time: 2017-10-28 22:31:22
+ * @Last Modified by: Leo
+ * @Last Modified time: 2017-11-29 10:20:46
  */
 
 require('./index.css');
@@ -25,6 +25,7 @@ var page = {
     init : function () {
         this.bindEvent();
     },
+
     // 绑定事件
     bindEvent : function () {
         var _this = this;
@@ -39,6 +40,7 @@ var page = {
             }
         });
     },
+
     // 提交表单
     submit : function () {
         var formData = {
@@ -59,6 +61,7 @@ var page = {
             formError.show(validateResult.msg);
         }
     },
+    
     // 表单验证
     formValidate : function (formData) {
         var result = {

@@ -2,7 +2,7 @@
  * @Author: Leo 
  * @Date: 2017-11-28 15:40:44 
  * @Last Modified by: Leo
- * @Last Modified time: 2017-11-28 23:25:03
+ * @Last Modified time: 2017-11-29 10:19:13
  */
 
 require("./index.css");
@@ -66,7 +66,7 @@ var page = {
     },
 
     // 加载商品详情
-    loadDetail: function () {
+    loadDetail : function () {
         var _this = this,
             html = '',
             $pageWrap = $('.page-wrap');
@@ -91,4 +91,4 @@ var page = {
 
 $(function () {
     page.init();
-})
+});

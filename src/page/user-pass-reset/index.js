@@ -1,8 +1,8 @@
 /*
  * @Author: leofe 
  * @Date: 2017-10-28 22:45:52 
- * @Last Modified by: leofe
- * @Last Modified time: 2017-10-30 21:48:35
+ * @Last Modified by: Leo
+ * @Last Modified time: 2017-11-29 10:21:25
  */
 
 require('./index.css');
@@ -28,14 +28,17 @@ var page = {
         answer   : '',
         token    : ''
     },
+
     // 初始化
     init : function () {
         this.onLoad();
         this.bindEvent();
     },
+
     onLoad : function () {
         this.loadStepUsername();
     },
+
     // 绑定事件
     bindEvent : function () {
         var _this = this;
@@ -97,10 +100,12 @@ var page = {
             }
         });
     },
+
     // 加载输入用户名的一步
     loadStepUsername : function (){
         $('.step-username').show();
     },
+
     // 加载输入密码提示问题答案的一步
     loadStepQuestion : function (){
         // 隐藏错误提示
@@ -110,6 +115,7 @@ var page = {
             .siblings('.step-question').show()
             .find('.question').text(this.data.question);
     },
+    
     // 加载输入新密码一步
     loadStepPassword : function (){
         // 隐藏错误提示

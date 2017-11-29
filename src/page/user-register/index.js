@@ -1,8 +1,8 @@
 /*
  * @Author: leofe 
  * @Date: 2017-10-28 20:56:15 
- * @Last Modified by: leofe
- * @Last Modified time: 2017-10-28 22:31:10
+ * @Last Modified by: Leo
+ * @Last Modified time: 2017-11-29 10:22:47
  */
 
 require('./index.css');
@@ -25,6 +25,7 @@ var page = {
     init : function () {
         this.bindEvent();
     },
+
     // 绑定事件
     bindEvent : function () {
         var _this = this;
@@ -51,19 +52,20 @@ var page = {
             }
         });
     },
+
     // 提交表单
     submit : function () {
         var formData = {
-                username        : $.trim($('#username').val()),
-                password        : $.trim($('#password').val()),
-                passwordConfirm : $.trim($('#password-confirm').val()),
-                phone           : $.trim($('#phone').val()),
-                email           : $.trim($('#email').val()),
-                question        : $.trim($('#question').val()),
-                answer          : $.trim($('#answer').val()),
-            },
-            // 表单验证结果
-            validateResult = this.formValidate(formData);
+            username        : $.trim($('#username').val()),
+            password        : $.trim($('#password').val()),
+            passwordConfirm : $.trim($('#password-confirm').val()),
+            phone           : $.trim($('#phone').val()),
+            email           : $.trim($('#email').val()),
+            question        : $.trim($('#question').val()),
+            answer          : $.trim($('#answer').val()),
+        },
+        // 表单验证结果
+        validateResult = this.formValidate(formData);
         if (validateResult.status) {
             // 验证成功，提交
             _user.register(formData, function (res) {
@@ -76,6 +78,7 @@ var page = {
             formError.show(validateResult.msg);
         }
     },
+    
     // 表单验证
     formValidate : function (formData) {
         var result = {

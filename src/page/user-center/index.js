@@ -1,8 +1,8 @@
 /*
  * @Author: leofe 
  * @Date: 2017-10-30 22:02:46 
- * @Last Modified by: leofe
- * @Last Modified time: 2017-10-30 23:30:43
+ * @Last Modified by: Leo
+ * @Last Modified time: 2017-11-29 10:20:03
  */
 
 require('./index.css');
@@ -18,6 +18,7 @@ var page = {
     init : function () {
         this.onLoad();
     },
+    
     // 页面加载
     onLoad : function () {
         // 初始化左侧菜单
@@ -27,6 +28,7 @@ var page = {
         // 加载用户信息
         this.loadUserInfo();
     },
+
     // 加载用户信息
     loadUserInfo : function () {
         var userHtnl = '';

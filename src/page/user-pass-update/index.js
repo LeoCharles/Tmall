@@ -1,8 +1,8 @@
 /*
  * @Author: leofe 
  * @Date: 2017-10-31 21:51:36 
- * @Last Modified by: leofe
- * @Last Modified time: 2017-10-31 22:57:05
+ * @Last Modified by: Leo
+ * @Last Modified time: 2017-11-29 10:21:42
  */
 
 require('./index.css');
@@ -18,6 +18,7 @@ var page = {
         this.onLoad();
         this.bindEvent();
     },
+
     bindEvent : function () {
         var _this = this;
         // 点击提交按钮
@@ -43,6 +44,7 @@ var page = {
             }
         });
     },
+
     // 页面加载
     onLoad : function () {
         // 初始化左侧菜单
@@ -50,6 +52,7 @@ var page = {
             name : 'user-pass-update'
         });
     },
+    
     // 验证字段信息
     validateForm : function (formData) {
         var result = {

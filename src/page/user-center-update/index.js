@@ -1,8 +1,8 @@
 /*
  * @Author: leofe 
  * @Date: 2017-10-30 22:05:54 
- * @Last Modified by: leofe
- * @Last Modified time: 2017-10-31 00:03:24
+ * @Last Modified by: Leo
+ * @Last Modified time: 2017-11-29 10:20:25
  */
 
 require('./index.css');
@@ -19,6 +19,7 @@ var page = {
         this.onLoad();
         this.bindEvent();
     },
+
     bindEvent : function () {
         var _this = this;
         // 点击提交按钮
@@ -42,6 +43,7 @@ var page = {
             }
         });
     },
+
     // 页面加载
     onLoad : function () {
         // 初始化左侧菜单
@@ -51,6 +53,7 @@ var page = {
         // 加载用户信息
         this.loadUserInfo();
     },
+
     // 加载用户信息
     loadUserInfo : function () {
         var userHtnl = '';
@@ -61,6 +64,7 @@ var page = {
             _tm.errorTips(errMsg);
         });
     },
+    
     // 验证字段信息
     validateForm : function (formData) {
         var result = {
