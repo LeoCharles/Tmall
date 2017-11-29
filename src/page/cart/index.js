@@ -2,14 +2,14 @@
  * @Author: Leo 
  * @Date: 2017-11-29 10:14:09 
  * @Last Modified by: Leo
- * @Last Modified time: 2017-11-29 18:08:10
+ * @Last Modified time: 2017-11-29 23:26:14
  */
 
 
 require("./index.css");
-require("page/common/nav/index.js");
 require("page/common/header/index.js");
 
+var nav           = require("page/common/nav/index.js");
 var _tm           = require("util/tm.js");
 var _cart         = require("service/cart-service.js");
 var templateIndex = require("./index.string");
@@ -117,7 +117,6 @@ var page = {
                 $selectedItem.each(function (idx, item) {
                     productIdsArr.push($(item).parents('.cart-table').data('product-id'));
                 });
-                console.log(productIdsArr)
                 if (productIdsArr.length) {
                     _this.deleteCartProduct(productIdsArr.join(','));
                 } else {
@@ -125,7 +124,15 @@ var page = {
                 }
             }
         });
-
+        // 去结算
+        $(document).on('click', '.btn-submit', function () {
+            // 总价大于0，进行提交
+            if(_this.data.cartInfo && _this.data.cartInfo.cartTotalPrice > 0){
+                window.location.href = './confirm.html';
+            } else {
+                _tm.errorTips('请选择商品后再提交');
+            }
+        });
     },
 
     // 加载购物车信息
@@ -150,10 +157,12 @@ var page = {
     renderCart : function (data) {
         this.filter(data);
         // 缓存购物车信息
-        this.data.carInfo = data;
+        this.data.cartInfo = data;
         //  生成html
         var cartHtml = _tm.renderHtml(templateIndex, data);
         $('.page-wrap').html(cartHtml);
+        // 更新顶部导航栏购物车数量
+        nav.loadCartCount();
     },
 
     // 删除指定商品，支持批量删除，productId用逗号分隔

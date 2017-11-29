@@ -2,7 +2,7 @@
  * @Author: leofe 
  * @Date: 2017-10-26 22:43:22 
  * @Last Modified by: Leo
- * @Last Modified time: 2017-11-29 17:48:42
+ * @Last Modified time: 2017-11-29 22:49:51
  */
 
 var _tm = require('util/tm.js');
@@ -80,7 +80,7 @@ var _cart = {
     deleteProduct : function (productIds, resolve, reject) {
         _tm.request({
             url: _tm.getServerUrl('/cart/delete_product.do'),
-            data: productIds,
+            data: {productIds: productIds},
             success: resolve,
             error: reject
         });
