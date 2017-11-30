@@ -2,7 +2,7 @@
  * @Author: Leo 
  * @Date: 2017-11-29 10:14:09 
  * @Last Modified by: Leo
- * @Last Modified time: 2017-11-29 23:26:14
+ * @Last Modified time: 2017-11-30 09:49:46
  */
 
 
@@ -77,19 +77,19 @@ var page = {
                 minCount  = 1,
                 maxCount  = parseInt($pCount.data('max')),
                 newCount  = 0;
-            // 切换选中状态
+            // 加减商品数量
             if (type === 'plus') {
                 if (currCount >= maxCount) {
                    _tm.errorTips('该商品数量已达到上限');
                    return;
                 }
-                // 累加
+                // 增加
                 newCount = currCount + 1;
             } else if (type === 'minus') {
                 if (currCount <= minCount) {
                     return;
                 }
-                // 累减
+                // 减少
                 newCount = currCount - 1;
             }
             // 更新购物车商品数量
