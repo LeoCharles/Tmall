@@ -2,7 +2,7 @@
  * @Author: Leo 
  * @Date: 2017-11-29 10:14:09 
  * @Last Modified by: Leo
- * @Last Modified time: 2017-11-30 09:49:46
+ * @Last Modified time: 2017-11-30 10:25:56
  */
 
 
@@ -128,7 +128,7 @@ var page = {
         $(document).on('click', '.btn-submit', function () {
             // 总价大于0，进行提交
             if(_this.data.cartInfo && _this.data.cartInfo.cartTotalPrice > 0){
-                window.location.href = './confirm.html';
+                window.location.href = './order-confirm.html';
             } else {
                 _tm.errorTips('请选择商品后再提交');
             }

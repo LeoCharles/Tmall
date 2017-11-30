@@ -2,7 +2,7 @@
  * @Author: Leo 
  * @Date: 2017-11-27 20:12:28 
  * @Last Modified by: Leo
- * @Last Modified time: 2017-11-28 16:40:09
+ * @Last Modified time: 2017-11-30 14:46:15
  */
 require("./index.css");
 require("page/common/nav/index.js");
@@ -112,4 +112,4 @@ var page = {
 
 $(function () {
     page.init();
-})
+});
