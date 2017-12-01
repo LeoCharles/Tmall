@@ -2,7 +2,7 @@
  * @Author: Leo 
  * @Date: 2017-11-30 10:29:38 
  * @Last Modified by: Leo
- * @Last Modified time: 2017-11-30 18:03:23
+ * @Last Modified time: 2017-12-01 09:26:50
  */
 
 /* 收货地址 */
@@ -118,49 +118,6 @@
     line-height: 50px;
     width: 100px;
     text-align: center;
-}
-/* 弹框 */ 
-.modal {
-    position: fixed;
-    top: 0;
-    bottom: 0;
-    left: 0;
-    right: 0;
-    background-color: #eee;
-    background-color: rgba(0, 0, 0, .4);
-    z-index: 9999;
-    overflow-x: hidden; 
-    overflow-y: auto;
-}
-.modal .modal-container {
-    width: 700px;
-    margin: 50px auto;
-    border-radius: 3px;
-    background-color: #fff;
-    color: #666;
-}
-.modal .modal-container .modal-header {
-    position: relative;
-    padding: 15px;
-    border-bottom: 1px solid #ccc;
-}
-.modal .modal-container .modal-header .modal-title {
-    text-align: center;
-    font-size: 16px;
-}
-.modal .modal-container .modal-header .close {
-    position: absolute;
-    right: 10px;
-    top: 10px;
-    padding: 10px;
-    font-size: 16px;
-    cursor: pointer;
-}
-.modal .modal-container .modal-header .close:hover {
-    color: #c60023;
-}
-.modal .modal-container .modal-body {
-    padding: 15px;
 }
 /* 表单样式 */
 .form {

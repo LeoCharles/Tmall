@@ -1,0 +1,29 @@
+/*
+ * @Author: Leo 
+ * @Date: 2017-12-01 16:18:49 
+ * @Last Modified by: Leo
+ * @Last Modified time: 2017-12-01 17:14:43
+ */
+
+.order-list-table {
+    width: 100%;
+    border-collapse: collapse;
+    background-color: #fafafa;
+    margin-bottom: 20px;
+}
+.order-list-table .order-info {
+    background-color: #eee;
+    padding: 10px;
+    color: #999;
+}
+.order-list-table.header {
+    background-color: #eee;
+}
+.order-list-table .order-info .order-text {
+    margin-right: 25px;
+}
+.order-list-table .cell {
+    padding: 10px 0;
+    color: #666;
+    border-bottom: 1px solid #eee; 
+}
