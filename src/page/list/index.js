@@ -2,7 +2,7 @@
  * @Author: Leo 
  * @Date: 2017-11-27 20:12:28 
  * @Last Modified by: Leo
- * @Last Modified time: 2017-11-30 14:46:15
+ * @Last Modified time: 2017-12-02 21:29:11
  */
 require("./index.css");
 require("page/common/nav/index.js");
@@ -20,7 +20,7 @@ var page = {
             categoryId : _tm.getUrlParam('categoryId') || '',
             orderBy    : _tm.getUrlParam('orderBy')    || 'default',
             pageNum    : _tm.getUrlParam('pageNum')    || 1,
-            pageSize   : _tm.getUrlParam('pageSize')   || 20
+            pageSize   : _tm.getUrlParam('pageSize')   || 1
         }
     },
 
