@@ -2,27 +2,27 @@
  * @Author: leofe 
  * @Date: 2017-10-20 22:08:54 
  * @Last Modified by: Leo
- * @Last Modified time: 2017-12-02 22:05:37
+ * @Last Modified time: 2017-12-03 22:15:09
  */
 
-var webpack           = require('webpack');
+var webpack = require("webpack");
 // 单独打包样式文件
 var ExtractTextPlugin = require("extract-text-webpack-plugin");
-var HtmlWebpackPlugin = require('html-webpack-plugin');
+var HtmlWebpackPlugin = require("html-webpack-plugin");
 
 // 环境变量的配置 dev / online
-var WEBPACK_ENV = process.env.WEBPACK_ENV || 'dev';
+var WEBPACK_ENV = process.env.WEBPACK_ENV || "dev";
 
 // 获取html-webpack-plugin参数的方法
 var getHtmlConfig = function(name, title) {
-    return {
-        template : './src/view/' + name + '.html',
-        filename : 'view/' + name + '.html',
-        title    : title,
-        inject   : true,
-        hash     : true,
-        chunks   : ['common', name]
-    };
+  return {
+    template: "./src/view/" + name + ".html",
+    filename: "view/" + name + ".html",
+    title: title,
+    inject: true,
+    hash: true,
+    chunks: ["common", name]
+  };
 };
 
 // webpack config
@@ -37,6 +37,7 @@ var config = {
     "order-confirm": ["./src/page/order-confirm/index.js"],
     "order-list": ["./src/page/order-list/index.js"],
     "order-detail": ["./src/page/order-detail/index.js"],
+    "order-payment": ["./src/page/order-payment/index.js"],
     "user-login": ["./src/page/user-login/index.js"],
     "user-register": ["./src/page/user-register/index.js"],
     "user-pass-reset": ["./src/page/user-pass-reset/index.js"],
@@ -97,6 +98,7 @@ var config = {
     new HtmlWebpackPlugin(getHtmlConfig("order-confirm", "订单确认")),
     new HtmlWebpackPlugin(getHtmlConfig("order-list", "订单列表")),
     new HtmlWebpackPlugin(getHtmlConfig("order-detail", "订单详情")),
+    new HtmlWebpackPlugin(getHtmlConfig("order-payment", "订单支付")),
     new HtmlWebpackPlugin(getHtmlConfig("user-login", "用户登录")),
     new HtmlWebpackPlugin(getHtmlConfig("user-register", "用户注册")),
     new HtmlWebpackPlugin(getHtmlConfig("user-pass-reset", "找回密码")),
@@ -108,20 +110,9 @@ var config = {
 };
 
 // 判断是否为线上环境
-if ('dev' === WEBPACK_ENV) {
-    // 配置webpack-dev-server开发环境
-    config.entry.common.push('webpack-dev-server/client?http://localhost:8088/');
+if ("dev" === WEBPACK_ENV) {
+  // 配置webpack-dev-server开发环境
+  config.entry.common.push("webpack-dev-server/client?http://localhost:8088/");
 }
 
 module.exports = config;
-
-
-
-
-
-
-
-
-
-
-
