@@ -2,7 +2,7 @@
  * @Author: Leo 
  * @Date: 2017-11-30 10:29:42 
  * @Last Modified by: Leo
- * @Last Modified time: 2017-12-01 16:16:45
+ * @Last Modified time: 2017-12-03 23:31:58
  */
 
 require("./index.css");
@@ -86,7 +86,7 @@ var page = {
                 _order.createOrder({
                     shippingId:shippingId
                 }, function (res) {
-                    window.location.href = './payment.html?orderNumber=' + res.orderNo;
+                    window.location.href = './order-payment.html?orderNumber=' + res.orderNo;
                 }, function (errMsg) {
                     _tm.errorTips(errMsg);
                 });
