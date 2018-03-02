@@ -1,0 +1,215 @@
+/*
+ * @Author: leofe 
+ * @Date: 2017-10-26 23:16:20 
+ * @Last Modified by: leofe
+ * @Last Modified time: 2017-10-30 22:20:41
+ */
+
+ /* 通用头部导航 */
+ .header .logo {
+    position: absolute;
+    left: 80px;
+    top:40px;
+    display: block;
+    font-size: 36px;
+    font-weight: bold;
+    color: #c60023;
+    text-decoration: none;
+ }
+.header .search-con {
+    padding: 40px 0 30px 250px; 
+}
+.header .search-con .search-input {
+    width: 550px;
+    height: 40px;
+    line-height: 40px;
+    padding-left: 10px;
+    font-size: 16px;
+    border: 2px solid #c60023;
+    outline: none;
+}
+.header .search-con .search-btn {
+    position: absolute;
+    width:80px;
+    height: 44px;
+}
+/* 面包屑导航 */
+.crumb {
+    height: 50px;
+    margin-bottom: 15px;
+    border-top: 2px solid #c60023;
+    line-height: 50px;
+    background-color: #eee;
+    color: #888;
+    font-size: 14px;
+}
+/*
+ * @Author: leofe 
+ * @Date: 2017-10-26 21:48:33 
+ * @Last Modified by: leofe
+ * @Last Modified time: 2017-10-26 21:58:30
+ */
+.nav {
+    height: 30px;
+    line-height: 30px;
+    background-color: #eee;
+}
+.nav .user-info {
+    float: left;
+}
+.nav .user.login {
+    display: none;
+}
+.nav .user .link {
+    margin-right: 5px;
+}
+.nav .nav-list {
+    float: right;
+}
+.nav .nav-list .nav-item {
+    display: inline-block;
+    margin-left: 5px;
+}
+
+
+
+
+
+
+
+
+/*
+ * @Author: leofe 
+ * @Date: 2017-10-27 00:00:23 
+ * @Last Modified by: leofe
+ * @Last Modified time: 2017-10-27 00:39:12
+ */
+
+/* 左侧导航 */
+.nav-side {
+    float: left;
+    width: 130px;
+    min-height: 150px;
+}
+.nav-side .nav-item {
+    line-height: 25px;
+    font-size: 13px;
+}
+.nav-side .nav-item .link {
+    color: #666;
+}
+.nav-side .nav-item.active .link {
+    color: #c60023;
+}
+/* 右侧内容区 */
+.content.width-nav {
+     float: left;
+     width: 950px;
+}/*
+ * @Author: Leo 
+ * @Date: 2017-11-28 10:41:34 
+ * @Last Modified by: Leo
+ * @Last Modified time: 2017-11-28 14:24:13
+ */
+
+/* 分页样式 */
+.page-con {
+    text-align: center;
+    color: #333;
+    /* 文字不被选中 */
+    -moz-user-select: none;
+    -ms-user-select: none;
+    -webkit-user-select: none;
+    user-select: none;
+}
+.page-con .page-item {
+    display: inline-block;
+    height: 36px;
+    line-height: 36px;
+    padding: 0 15px;
+    margin: 0 2px;
+    border: 1px solid #ccc;
+    background-color: #eee;
+    cursor: pointer;
+}
+.page-con .page-item:hover {
+    background-color: #fff;
+}
+.page-con .page-item.disabled {
+    color: #ccc;
+    background-color: #eee;
+    cursor: auto;
+}
+.page-con .page-item.active {
+    background-color: #fff;
+    cursor: auto;
+}
+.page-con .page-total {
+    margin-left: 10px;
+    cursor: auto;
+}/*
+ * @Author: Leo 
+ * @Date: 2017-12-01 16:18:49 
+ * @Last Modified by: Leo
+ * @Last Modified time: 2017-12-03 00:03:48
+ */
+
+.order-list-table {
+    width: 100%;
+    border-collapse: collapse;
+    background-color: #fafafa;
+    margin-bottom: 20px;
+}
+.order-list-table .cell {
+    padding: 10px 0;
+    color: #666;
+    border-bottom: 1px solid #eee;
+}
+.order-list-table.header {
+    background-color: #eee;
+}
+.order-list-table .order-info {
+    background-color: #eee;
+    padding: 10px;
+    font-size: 14px;
+    color: #999;
+}
+.order-list-table .order-info .order-text {
+    margin-right: 20px;
+}
+.order-list-table .order-info .order-num {
+    font-weight: bold;
+}
+.order-list-table .order-info .order-total {
+    font-weight: bold;
+    color: #c60023;
+}
+.order-list-table .order-info .order-detail {
+    float: right;
+}
+.order-list-table .cell-img {
+    width: 10%;
+    padding: 10px;
+    text-align: center;
+}
+.order-list-table .cell-img .p-img {
+    width: 80px;
+    height: 80px;
+    border: 1px solid #eee;
+}
+.order-list-table .cell-info {
+    width: 45%;
+    text-align: left;
+}
+.order-list-table .cell-price {
+    width: 15%;
+    text-align: center;
+}
+.order-list-table .cell-count {
+    width: 15%;
+    text-align: center;
+}
+.order-list-table .cell-total {
+    width: 15%;
+    text-align: center;
+}

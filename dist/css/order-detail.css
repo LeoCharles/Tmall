@@ -1,0 +1,202 @@
+/*
+ * @Author: leofe 
+ * @Date: 2017-10-26 23:16:20 
+ * @Last Modified by: leofe
+ * @Last Modified time: 2017-10-30 22:20:41
+ */
+
+ /* 通用头部导航 */
+ .header .logo {
+    position: absolute;
+    left: 80px;
+    top:40px;
+    display: block;
+    font-size: 36px;
+    font-weight: bold;
+    color: #c60023;
+    text-decoration: none;
+ }
+.header .search-con {
+    padding: 40px 0 30px 250px; 
+}
+.header .search-con .search-input {
+    width: 550px;
+    height: 40px;
+    line-height: 40px;
+    padding-left: 10px;
+    font-size: 16px;
+    border: 2px solid #c60023;
+    outline: none;
+}
+.header .search-con .search-btn {
+    position: absolute;
+    width:80px;
+    height: 44px;
+}
+/* 面包屑导航 */
+.crumb {
+    height: 50px;
+    margin-bottom: 15px;
+    border-top: 2px solid #c60023;
+    line-height: 50px;
+    background-color: #eee;
+    color: #888;
+    font-size: 14px;
+}
+/*
+ * @Author: leofe 
+ * @Date: 2017-10-26 21:48:33 
+ * @Last Modified by: leofe
+ * @Last Modified time: 2017-10-26 21:58:30
+ */
+.nav {
+    height: 30px;
+    line-height: 30px;
+    background-color: #eee;
+}
+.nav .user-info {
+    float: left;
+}
+.nav .user.login {
+    display: none;
+}
+.nav .user .link {
+    margin-right: 5px;
+}
+.nav .nav-list {
+    float: right;
+}
+.nav .nav-list .nav-item {
+    display: inline-block;
+    margin-left: 5px;
+}
+
+
+
+
+
+
+
+
+/*
+ * @Author: leofe 
+ * @Date: 2017-10-27 00:00:23 
+ * @Last Modified by: leofe
+ * @Last Modified time: 2017-10-27 00:39:12
+ */
+
+/* 左侧导航 */
+.nav-side {
+    float: left;
+    width: 130px;
+    min-height: 150px;
+}
+.nav-side .nav-item {
+    line-height: 25px;
+    font-size: 13px;
+}
+.nav-side .nav-item .link {
+    color: #666;
+}
+.nav-side .nav-item.active .link {
+    color: #c60023;
+}
+/* 右侧内容区 */
+.content.width-nav {
+     float: left;
+     width: 950px;
+}/*
+ * @Author: Leo 
+ * @Date: 2017-12-02 21:59:54 
+ * @Last Modified by: Leo
+ * @Last Modified time: 2017-12-02 23:50:48
+ */
+
+/* 订单信息 */
+.order-info .text-line {
+    height: 30px;
+    line-height: 30px;
+}
+.order-info .text-line .text {
+    margin-right: 20px;
+}
+.order-info .btn {
+    width: 80px;
+    height: 30px;
+    line-height: 30px;
+    margin-right: 10px;
+    padding: 0;
+    font-size: 12px;
+    text-align: center;
+}
+
+/* 商品清单 */
+.product-table {
+    border-collapse: collapse;
+}
+
+.product-table .cell-th {
+    background-color: #eee;
+}
+
+.product-table .cell {
+    border-bottom: 1px solid #eee;
+    background-color: #fafafa;
+}
+
+.product-table .cell-img {
+    width: 10%;
+    padding: 10px;
+    text-align: center;
+}
+
+.product-table .cell-img .p-img {
+    width: 80px;
+    height: 80px;
+    border: 1px solid #eee;
+}
+
+.product-table .cell-info {
+    width: 45%;
+    text-align: left;
+}
+
+.product-table .cell-price {
+    width: 15%;
+    text-align: center;
+}
+
+.product-table .cell-count {
+    width: 15%;
+    text-align: center;
+}
+
+.product-table .cell-total {
+    width: 15%;
+    text-align: center;
+}
+.total {
+    height: 40px;
+    line-height: 40px;
+    margin-top: 20px;
+    margin-right: 20px;
+    font-size: 14px;
+    text-align: right;
+}
+.total .total-price {
+    font-size: 20px;
+    font-weight: bold;
+    color: #c60023;
+    vertical-align: middle;
+}
+/* 错误信息 */
+.err-tip {
+    height: 80px;
+    line-height: 80px;
+    margin-bottom: 20px;
+    color: #f60;
+    text-align: center;
+    background-color: #eee;
+    font-size: 16px;
+    font-weight: bold;
+}

@@ -1,0 +1,57 @@
+/*
+ * @Author: leofe 
+ * @Date: 2017-10-27 21:53:20 
+ * @Last Modified by: leofe
+ * @Last Modified time: 2017-10-28 13:12:24
+ */
+
+
+.page-wrap {
+    margin-top: 20px;
+    padding: 50px 0;
+    text-align: center;
+    background-color: #fff;
+}
+.result-con {
+    display: none;
+}
+.result-con .result-title {
+    color: #e72955;
+}
+.result-con .result-content {
+    margin: 30px;
+}
+.result-con .result-content .link {
+    margin: 0 5px;
+    padding: 5px 10px;
+    border: 1px solid #e72955;
+    color: #e72955;
+}/*
+ * @Author: leofe 
+ * @Date: 2017-10-26 21:18:53 
+ * @Last Modified by: leofe
+ * @Last Modified time: 2017-10-30 22:21:05
+ */
+.nav-simple {
+    height: 60px;
+    line-height: 60px;
+    border-bottom: 1px solid #ddd;
+    background-color: #fff;
+}
+.nav-simple .logo {
+    font-size: 26px;
+    font-weight: bold;
+    color: #c60023;
+    text-decoration: none;
+}
+
+
+
+
+
+
+
+
+
+
+

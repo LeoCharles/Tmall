@@ -1,0 +1,132 @@
+/*
+ * @Author: leofe 
+ * @Date: 2017-10-26 23:16:20 
+ * @Last Modified by: leofe
+ * @Last Modified time: 2017-10-30 22:20:41
+ */
+
+ /* 通用头部导航 */
+ .header .logo {
+    position: absolute;
+    left: 80px;
+    top:40px;
+    display: block;
+    font-size: 36px;
+    font-weight: bold;
+    color: #c60023;
+    text-decoration: none;
+ }
+.header .search-con {
+    padding: 40px 0 30px 250px; 
+}
+.header .search-con .search-input {
+    width: 550px;
+    height: 40px;
+    line-height: 40px;
+    padding-left: 10px;
+    font-size: 16px;
+    border: 2px solid #c60023;
+    outline: none;
+}
+.header .search-con .search-btn {
+    position: absolute;
+    width:80px;
+    height: 44px;
+}
+/* 面包屑导航 */
+.crumb {
+    height: 50px;
+    margin-bottom: 15px;
+    border-top: 2px solid #c60023;
+    line-height: 50px;
+    background-color: #eee;
+    color: #888;
+    font-size: 14px;
+}
+/*
+ * @Author: leofe 
+ * @Date: 2017-10-26 21:48:33 
+ * @Last Modified by: leofe
+ * @Last Modified time: 2017-10-26 21:58:30
+ */
+.nav {
+    height: 30px;
+    line-height: 30px;
+    background-color: #eee;
+}
+.nav .user-info {
+    float: left;
+}
+.nav .user.login {
+    display: none;
+}
+.nav .user .link {
+    margin-right: 5px;
+}
+.nav .nav-list {
+    float: right;
+}
+.nav .nav-list .nav-item {
+    display: inline-block;
+    margin-left: 5px;
+}
+
+
+
+
+
+
+
+
+/*
+ * @Author: leofe 
+ * @Date: 2017-10-27 00:00:23 
+ * @Last Modified by: leofe
+ * @Last Modified time: 2017-10-27 00:39:12
+ */
+
+/* 左侧导航 */
+.nav-side {
+    float: left;
+    width: 130px;
+    min-height: 150px;
+}
+.nav-side .nav-item {
+    line-height: 25px;
+    font-size: 13px;
+}
+.nav-side .nav-item .link {
+    color: #666;
+}
+.nav-side .nav-item.active .link {
+    color: #c60023;
+}
+/* 右侧内容区 */
+.content.width-nav {
+     float: left;
+     width: 950px;
+}/*
+ * @Author: leofe 
+ * @Date: 2017-10-30 22:06:03 
+ * @Last Modified by: leofe
+ * @Last Modified time: 2017-10-30 23:41:10
+ */
+
+.user-info .form-line {
+    height: 30px;
+    line-height: 30px;
+    font-size: 14px;
+    margin-bottom: 10px;
+}
+.user-info .form-line .label {
+    display: inline-block;
+    width: 60px;
+    text-align: center;
+}
+.user-info .form-line .input {
+    height: 25px;
+    width: 200px;
+    line-height: 25px;
+    font-size: 14px;
+    outline: none;
+}

@@ -1,0 +1,290 @@
+/*
+ * @Author: leofe 
+ * @Date: 2017-10-26 23:16:20 
+ * @Last Modified by: leofe
+ * @Last Modified time: 2017-10-30 22:20:41
+ */
+
+ /* 通用头部导航 */
+ .header .logo {
+    position: absolute;
+    left: 80px;
+    top:40px;
+    display: block;
+    font-size: 36px;
+    font-weight: bold;
+    color: #c60023;
+    text-decoration: none;
+ }
+.header .search-con {
+    padding: 40px 0 30px 250px; 
+}
+.header .search-con .search-input {
+    width: 550px;
+    height: 40px;
+    line-height: 40px;
+    padding-left: 10px;
+    font-size: 16px;
+    border: 2px solid #c60023;
+    outline: none;
+}
+.header .search-con .search-btn {
+    position: absolute;
+    width:80px;
+    height: 44px;
+}
+/* 面包屑导航 */
+.crumb {
+    height: 50px;
+    margin-bottom: 15px;
+    border-top: 2px solid #c60023;
+    line-height: 50px;
+    background-color: #eee;
+    color: #888;
+    font-size: 14px;
+}
+/*
+ * @Author: leofe 
+ * @Date: 2017-10-26 21:48:33 
+ * @Last Modified by: leofe
+ * @Last Modified time: 2017-10-26 21:58:30
+ */
+.nav {
+    height: 30px;
+    line-height: 30px;
+    background-color: #eee;
+}
+.nav .user-info {
+    float: left;
+}
+.nav .user.login {
+    display: none;
+}
+.nav .user .link {
+    margin-right: 5px;
+}
+.nav .nav-list {
+    float: right;
+}
+.nav .nav-list .nav-item {
+    display: inline-block;
+    margin-left: 5px;
+}
+
+
+
+
+
+
+
+
+/*
+ * @Author: Leo 
+ * @Date: 2017-11-30 10:29:38 
+ * @Last Modified by: Leo
+ * @Last Modified time: 2017-12-01 09:26:50
+ */
+
+/* 收货地址 */
+.address-item,
+.address-add {
+    float: left;
+    width: 200px;
+    padding: 5px 10px;
+    margin: 20px 20px 0 0 ;
+    border: 3px dashed #ccc;
+    cursor: pointer;
+}
+.address-add:hover,
+.address-item:hover {
+    background-color: #fafafa;
+}
+.address-item.active {
+    border: 3px dashed #c60023;
+    background-color: #fafafa;
+}
+.address-item .address-title {
+    height: 20px;
+    line-height: 20px;
+    padding-bottom: 5px;
+    border-bottom: 1px solid #ddd;
+    color: #666;
+    overflow: hidden;
+}
+.address-item .address-detail {
+    height: 40px;
+    line-height: 20px;
+    margin-top: 5px;
+    font-size: 14px;
+    color: #666;
+    overflow: hidden;
+}
+.address-item .address-operation {
+    text-align: right;
+    visibility: hidden;
+}
+.address-item:hover .address-operation {
+    visibility: visible;
+}
+.address-item .address-operation .link {
+    margin-right: 5px;
+}
+.address-add .address-new {
+    text-align: center;
+    padding: 10px 0;
+    color: #666;
+}
+.address-add .address-new .fa {
+    font-size: 50px;
+    line-height: 50px;
+    color: #999;
+}
+.address-add .address-new .text {
+    height: 22px;
+    line-height: 22px;
+    font-size: 14px;
+}
+/* 商品清单 */
+.product-table {
+    width: 100%;
+    margin: 10px 0;
+    border-collapse: collapse;
+}
+.product-table tr {
+    border-bottom: 1px solid #eee;
+}
+.product-table .cell-img {
+    width: 10%;
+    padding: 10px;
+    text-align: center;
+}
+.product-table .cell-img .p-img {
+    width: 80px;
+    height: 80px;
+    border: 1px solid #eee;
+}
+.product-table .cell-info {
+    width: 30%;
+    text-align: left;
+}
+.product-table .cell-price {
+    width: 20%;
+    text-align: center;
+}
+.product-table .cell-count {
+    width: 20%;
+    text-align: center;
+}
+.product-table .cell-total {
+    width: 20%;
+    text-align: center;
+}
+/* 订单提交 */
+.submit-con {
+    text-align: right;
+}
+.submit-con .submit-total {
+    margin-right: 30px;
+    font-size: 20px;
+    font-weight: bold;
+    color: #c60023;
+    vertical-align: middle;
+}
+.submit-con .text {
+    vertical-align: middle;
+}
+.submit-con .order-submit {
+    height: 50px;
+    line-height: 50px;
+    width: 100px;
+    text-align: center;
+}
+/* 表单样式 */
+.form {
+    width: 400px;
+    margin: 0 auto;
+}
+.form .form-line{
+    margin: 5px 0;
+    overflow: hidden;
+}
+.form .form-line .label {
+    display: block;
+    float: left;
+    width: 110px;
+    height: 34px;
+    line-height: 34px;
+    margin-right: 10px;
+    text-align: right;
+}
+.form .form-line .label .require {
+    color: #c60023;
+    font-size: 16px;
+    font-weight: bold;
+    margin-right: 5px;
+    font-style: normal;
+}
+.form .form-line .form-item {
+    padding: 0 5px;
+    height: 30px;
+    line-height: 30px;
+    outline: none;
+    margin-right: 10px;
+}
+.form .form-line .address-btn {
+    margin: 10px 0 0 120px;
+    height: 34px;
+    line-height: 34px;
+    font-size: 14px;
+}
+
+/*
+ * @Author: Leo 
+ * @Date: 2017-12-01 09:23:19 
+ * @Last Modified by: Leo
+ * @Last Modified time: 2017-12-01 09:41:50
+ */
+
+/* 弹框 */
+.modal {
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-color: #eee;
+    background-color: rgba(0, 0, 0, .4);
+    z-index: 9999;
+    overflow-x: hidden;
+    overflow-y: auto;
+}
+.modal .modal-container {
+    width: 700px;
+    margin: 50px auto;
+    border-radius: 3px;
+    background-color: #fff;
+    color: #666;
+}
+.modal .modal-container .modal-header {
+    position: relative;
+    padding: 15px;
+    border-bottom: 1px solid #ccc;
+}
+.modal .modal-container .modal-header .modal-title {
+    text-align: center;
+    font-size: 16px;
+}
+.modal .modal-container .modal-header .close {
+    position: absolute;
+    right: 10px;
+    top: 10px;
+    padding: 10px;
+    font-size: 16px;
+    cursor: pointer;
+}
+.modal .modal-container .modal-header .close:hover {
+    color: #c60023;
+}
+.modal .modal-container .modal-body {
+    padding: 15px;
+}

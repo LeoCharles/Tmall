@@ -1,0 +1,199 @@
+/*
+ * @Author: Leo 
+ * @Date: 2017-11-29 10:33:27 
+ * @Last Modified by: Leo
+ * @Last Modified time: 2017-12-03 00:02:33
+ */
+
+.cart-table {
+    width: 100%;
+    border: 1px solid #ebebeb;
+    border-collapse: collapse;
+    margin-bottom: 10px;
+}
+.cart-table .cell-check {
+    width: 6%;
+    text-align: center;
+}
+.cart-table .cell-img {
+    width: 10%;
+    text-align: left;
+}
+.cart-table .cell-img .p-img {
+    width: 80px;
+    height: 80px;
+    margin: 10px auto;
+    border: 1px solid #ddd;
+}
+.cart-table .cell-info {
+    width: 35%;
+    text-align: left;
+}
+.cart-table .cell-price {
+    width: 10%;
+    text-align: center;
+}
+.cart-table .cell-count {
+    width: 15%;
+    text-align: center;
+}
+.cart-table .cell-count .count-input {
+    width: 50px;
+    height: 28px;
+    line-height: 28px;
+    border: 1px solid #ddd;
+    text-align: center;
+    vertical-align: middle;
+    outline: none;
+    color: #333;
+}
+.cart-table .cell-count .count-btn {
+    display: inline-block;
+    width: 20px;
+    height: 28px;
+    line-height: 28px;
+    border: 1px solid #ddd;
+    text-align: center;
+    vertical-align: middle;
+    cursor: pointer;
+    background-color: #fff;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    -webkit-user-select: none;
+    user-select: none;
+}
+.cart-table .cell-total {
+    width: 14%;
+    text-align: center;
+    font-weight: bold;
+}
+.cart-table .cell-operation {
+    width: 10%;
+    text-align: center;
+}
+/* header */
+.cart-header {
+    background-color: #eee;
+}
+.cart-header .cart-cell {
+    height: 40px;
+    line-height: 40px;
+}
+.cart-header .cell-check {
+    padding-left: 12px;
+}
+.cart-header .cell-info {
+    width: 45%;
+    padding-left: 108px;
+}
+/* footer */
+.cart-footer {
+    position: relative;
+    line-height: 50px;
+    background-color: #eee;
+    overflow: hidden;
+}
+.cart-footer .select-con {
+    float: left;
+    padding-left: 12px;
+}
+.cart-footer .delete-con {
+    float: left;
+    margin-left: 20px;
+}
+.cart-footer .submit-con {
+    float: right;
+}
+.cart-footer .submit-con .submit-total{
+    font-size: 20px;
+    color: #c60023;
+    font-weight: bold;
+    margin-right: 30px;
+    vertical-align: middle;
+}
+.cart-footer .submit-con .btn-submit {
+    width: 80px;
+    height: 50px;
+    line-height: 50px;
+    text-align: center;
+}
+/*
+ * @Author: leofe 
+ * @Date: 2017-10-26 23:16:20 
+ * @Last Modified by: leofe
+ * @Last Modified time: 2017-10-30 22:20:41
+ */
+
+ /* 通用头部导航 */
+ .header .logo {
+    position: absolute;
+    left: 80px;
+    top:40px;
+    display: block;
+    font-size: 36px;
+    font-weight: bold;
+    color: #c60023;
+    text-decoration: none;
+ }
+.header .search-con {
+    padding: 40px 0 30px 250px; 
+}
+.header .search-con .search-input {
+    width: 550px;
+    height: 40px;
+    line-height: 40px;
+    padding-left: 10px;
+    font-size: 16px;
+    border: 2px solid #c60023;
+    outline: none;
+}
+.header .search-con .search-btn {
+    position: absolute;
+    width:80px;
+    height: 44px;
+}
+/* 面包屑导航 */
+.crumb {
+    height: 50px;
+    margin-bottom: 15px;
+    border-top: 2px solid #c60023;
+    line-height: 50px;
+    background-color: #eee;
+    color: #888;
+    font-size: 14px;
+}
+/*
+ * @Author: leofe 
+ * @Date: 2017-10-26 21:48:33 
+ * @Last Modified by: leofe
+ * @Last Modified time: 2017-10-26 21:58:30
+ */
+.nav {
+    height: 30px;
+    line-height: 30px;
+    background-color: #eee;
+}
+.nav .user-info {
+    float: left;
+}
+.nav .user.login {
+    display: none;
+}
+.nav .user .link {
+    margin-right: 5px;
+}
+.nav .nav-list {
+    float: right;
+}
+.nav .nav-list .nav-item {
+    display: inline-block;
+    margin-left: 5px;
+}
+
+
+
+
+
+
+
+
